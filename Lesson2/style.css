@@ -5,7 +5,6 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-around;
-
 }
 .block {
     background: plum;
@@ -42,5 +41,29 @@ body {
     font-style: normal;
 }
 
-
-
+/*task2*/
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: wheat;
+    height: 300px;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(360deg, yellowgreen, darkred);
+    transition: 2s;
+}
+.square:hover {
+    border-radius: 50%;
+    background: linear-gradient(180deg, antiquewhite, darkgray);
+    transition: 1s;
+}
+.square:active {
+    animation: ball 2s linear;
+}
+@keyframes  ball {
+    from {top: 50%}
+    to {bottom: 50%;}
+}
