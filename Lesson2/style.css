@@ -12,8 +12,9 @@ body {
     width: 200px;
     height: 200px;
     margin: 0 20px 20px;
-    align-content: center;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .rubik-pixels {
     font-family: "Rubik Pixels", system-ui;
