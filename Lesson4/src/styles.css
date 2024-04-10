@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.56em;
+    color: #000;
+    font-family: "KoHo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.block-1 , .block-2, .block-3 {
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-2, .block-3 {
+    background-image: url("../assets/Rectangle 4.png");
+    background-size: cover;
+    justify-content: space-evenly;
+}
+button {
+    font-size: 1.2em;
+    background: #D9D9D999;
+    border: 1px solid #9C98981A;
+    box-shadow: 0 4px 4px 0 #00000040;
+    border-radius: 5px;
+    width: 77%;
+    height: 20%;
+    /*box-sizing: border-box;*/
+    text-align: center;
+    cursor: pointer;
+}
+/*-------------------------------SECTION 1--------------------------------*/
+.block-1 {
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/image 4.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-1, .block-1-container {
+    width: 35vw;
+    height: 40vh;
+    box-shadow: 0 4px 4px 0 #00000040;
+}
+.block-1-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #FAF9F7;
+    box-shadow: 0 4px 4px 0 #00000040;
+}
+h2 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.8em;
+    Line-height :59px;
+    text-align: center;
+    font-weight: 400;
+}
+p {
+    text-align: center;
+    font-size: 1em;
+    line-height: normal;
+}
+
+/*-------------------------------SECTION 2--------------------------------*/
+
+.block-2 {
+    flex-direction: column;
+}
+.block-2-text > p {
+    align-items: start;
+    text-align: left;
+    width: 63vw;
+    font-size: 1.4em;
+}
+.block-2-video {
+    width: 64vw;
+    min-height: 54vh;
+    box-sizing: content-box;
+    background-size: cover;
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    height: 100%
+}
+
+/*-------------------------------SECTION 3--------------------------------*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: content-box;
+    width: 30vw;
+    height: 71vh;
+    background: #53535366;
+    /*padding-bottom: 10%;*/
+}
+.card-button {
+    width: 90%;
+    height: 11.6%;
+    margin-bottom: 12%;
+}
+h3 {
+    font-weight: 400;
+    /*padding-top: 10px;*/
+}
