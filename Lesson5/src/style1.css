@@ -1,0 +1,61 @@
+* {
+    margin: 0 auto;
+}
+body {
+    margin:  20px;
+    display: flex;
+}
+span {
+    font-size: 24px;
+    font-weight: 700;
+}
+li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+div#list-1 li:nth-child(odd)::before, ul.oddSizeList>li:nth-child(odd)::before,
+#list-3>.after2list>li:nth-child(2n+4)::before, .violetLastList>li:last-child::before,
+ul.redFirstLetterList>li::after  {
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div#list-1>ul.evenPinkList>li:nth-child(even) {
+    color: #fd51b8;
+}
+div#list-1 li:nth-child(odd)::before {
+    background-image: url("../assets/icons8-cherries-16.png");
+}
+
+div#list-2 li:nth-child(odd) {
+    font-size: 22px;
+}
+ul.oddSizeList>li:nth-child(odd)::before {
+    background-image: url("../assets/icons8-ukraine-16.png");
+}
+
+#list-3>.after2list>li:nth-child(2n+4)::after {
+    content: "!";
+}
+#list-3>.after2list>li:nth-child(2n+4)::before {
+    background-image: url("../assets/icons8-red-bow-16.png");
+}
+.violetLastList>li:last-child {
+    color: #ee43ee;
+}
+.violetLastList>li:last-child::before {
+    background-image: url("../assets/icons8-tropical-fish-16.png");
+}
+
+ul.redFirstLetterList>li:first-letter {
+    color: red;
+    font-size: 30px;
+}
+ul.redFirstLetterList>li::after {
+    background-image: url("../assets/icons8-watermelon-16.png");
+}
