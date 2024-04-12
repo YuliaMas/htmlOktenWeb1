@@ -1,0 +1,89 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.card {
+    width: 21vw;
+    height: 50vh;
+    border: 4px solid #554C4C;
+    background: #D9D9D94D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+    text-align: center;
+}
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+            "slnt" 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 10px;
+    max-width: 70%;
+}
+.card:nth-child(2n), .card_2>.games {
+    border: 4px solid #65856E;
+}
+.games {
+    border: 4px solid #554C4C;
+    background: #FFFFFF;
+    width: 100px;
+    height: 100px;
+    gap: 0;
+    border-radius: 50%;
+    position: absolute;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -14%;
+}
+div.card_1>.games>div.ds3 {
+    background-image: url("../assets/Ds3 Tool.png");
+    background-color: rgba(236, 228, 241, 0.1);
+    background-size: contain;
+    width: 72%;
+    height: 72%;
+}
+div.card_2>.games>div.chessboard {
+    background-image: url("../assets/Chessboard.png");
+    background-color: rgba(236, 228, 241, 0.1);
+    background-size: contain;
+    width: 72%;
+    height: 72%;
+}
+div.card_3>.games>div.battle{
+    background-image: url("../assets/Battle.png");
+    background-color: rgba(236, 228, 241, 0.1);
+    background-size: contain;
+    width: 72%;
+    height: 72%;
+}
+
+
