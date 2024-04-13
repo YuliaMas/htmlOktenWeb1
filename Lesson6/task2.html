@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 6 , Task 2</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        .block-A, .block-B, .block-C {
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            background: #6cdec7;
+        }
+        .block-B{
+            background: #c5755e;
+        }
+        .block-C{
+            background: #c0f33e;
+        }
+        header.block-A {
+            grid-area: A;
+        }
+        .block-B{
+            grid-area: B;
+        }
+        .block-C {
+            grid-area: C;
+        }
+        .container {
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            grid-template-areas:
+            "A A A"
+            "B B C";
+            grid-gap: 10px;
+            grid-template-rows: 28vh  68vh;
+            grid-template-columns: 34vw 34vw 29vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="block-A"><span>A</span></header>
+        <div class="block-B"><span>B</span></div>
+        <div class="block-C"><span>C</span></div>
+    </div>
+</body>
+</html>
